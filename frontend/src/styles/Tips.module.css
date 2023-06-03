@@ -1,0 +1,43 @@
+.Tips {
+    /* background-color: black; */
+    padding-bottom: 5%;
+    /* background-color: lightseagreen; */
+    /* padding-bottom: 5%; */
+    background: rgb(32, 178, 170);
+    background: linear-gradient(90deg, rgba(5, 130, 247, 1) 0%, rgba(18, 197, 241, .8) 39%, rgba(40, 243, 199, 6) 100%);
+    /* display: flex; */
+    /* padding-top: 80px; */
+    height: 100vh;
+    position: relative;
+}
+
+.Tips .Container {
+    display: flex;
+}
+
+.Tips .Container .Text {
+    color: white;
+    width: 47%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.Tips .Container .Text h2 {
+    font-weight: 900;
+}
+
+@media (max-width: 500px){
+
+    .Tips .Container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .Tips .Container .Text {
+        color: white;
+        width: 80%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
