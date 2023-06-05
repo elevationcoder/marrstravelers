@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Adventures from './pages/Adventures';
 import Tips from './pages/Tips';
 import NavBar from './components/NavBar';
+import FullPost from './pages/FullPost';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/adventures" element={<Adventures />} />
         <Route path="/tips" element={<Tips />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/adventures/:postId" element={<FullPost />} />
       </Routes>
     </Router>
   );

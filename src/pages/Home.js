@@ -1,8 +1,9 @@
 import React /*{ useEffect, useState }*/  from 'react';
-// import axios from 'axios';
-import entries from '../data';
+import { useLocalData } from '../data';
 import design from '../styles/Home.module.css'
+// import axios from 'axios';
 function Home() {
+  const { data } = useLocalData();
   // const [posts, setPosts] = useState([]);
 
   // useEffect(() => {
@@ -19,7 +20,6 @@ function Home() {
       <div className={design.Container}>
         <h1 className={design.Welcome}>MarrsTravelers</h1>
         <p>Welcome!</p>
-        <p>{entries[0].title}</p>
       </div>
       {/* {posts.map((post) => (
         <p key={post.id}>{post.title}</p>

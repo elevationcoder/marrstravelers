@@ -1,17 +1,43 @@
 import React from 'react';
 import design from '../styles/Adventures.module.css';
 import PageHeader from '../components/PageHeader';
+import { motion } from 'framer-motion';
+import adventuresData from '../adventuresData';
+import AdventureCard from '../components/AdventureCard';
+import AdventureCardContainer from '../components/AdventureCardContainer';
+
 const Adventures = () => {
+  const handleClick = () => {
+    // Perform animation here
+    // Navigate to the full blog post page
+  };
+
   return (
-    <div className={design.Adventures} id="adventures">
+    <div className={design.Adventures}>
       <PageHeader title={"Adventures"} />
-      <div className={design.Container}>
-        <div className={design.Text}>
-          <h2>Our Adventures</h2>
-        </div>
+      <div><p>Test Text</p></div>
+      <div className={design.AdventuresContainer}>
+        <AdventureCardContainer>
+            {adventuresData.map((data, index) => (
+              <motion.div
+                key={index}
+                className={design.adventureCard}
+                onClick={handleClick}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <AdventureCard
+                  title={data.title}
+                  // description={data.description}
+                  image={data.image}
+                  postId={data.postId}
+                />
+              </motion.div>
+            ))}
+        </AdventureCardContainer>
       </div>
     </div>
   );
-}
+};
 
 export default Adventures;

@@ -4,14 +4,12 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 2%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .Container hr {
-    /* margin-top: 10px; */
     position: absolute;
     left: 0;
-    /* width: 1347px; */
     width: 12vw;
     border: 1px solid #8C1CD1
 }

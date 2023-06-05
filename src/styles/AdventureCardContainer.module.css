@@ -1,0 +1,80 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .scrollButtonLeft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  .scrollButtonRight {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .scrollButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .scrollIcon {
+    width: 20px;
+    height: 20px;
+    color: #000;
+}
+
+.cardsContainer {
+    /* width: 100%; */
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    /* padding-top: 100px; */
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: #999999 transparent; */
+    /* overflow: auto; */
+    /* padding: 10px;  */
+    /* margin-bottom: auto; */
+    height: 650px;
+}
+
+.cards {
+  display: flex;
+  gap: 100px;
+  transition: transform 0.3s ease-in-out;
+  align-items: flex-start;
+  padding: 100px 0px 60px 60px;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.cardsContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cardsContainer::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 3px;
+}
+
+.cardsContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+} 
