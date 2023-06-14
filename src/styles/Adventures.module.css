@@ -1,6 +1,10 @@
 .Adventures {
-    background: linear-gradient(90deg, rgba(5, 130, 247, 1) 0%, rgba(18, 197, 241, .8) 39%, rgba(40, 243, 199, 6) 100%);
-    height: 100vh;
+    background: linear-gradient(
+        90deg, rgba(5, 130, 247, 1) 0%,
+        rgba(18, 197, 241, .8) 39%, 
+        rgba(40, 243, 199, 6) 100%);
+    min-height: 100vh;
+    overflow-y: hidden;
 }
 
 /* .AdventuresContainer {

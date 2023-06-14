@@ -25,11 +25,14 @@ const Adventures = () => {
                 onClick={handleClick}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: .2 }}
               >
                 <AdventureCard
                   title={data.title}
                   // description={data.description}
-                  image={data.image}
+                  image={data.image[0]}
                   postId={data.postId}
                 />
               </motion.div>
