@@ -1,22 +1,49 @@
 .Home {
-    background: rgb(2, 0, 36);
     background: linear-gradient(45deg, rgba(248, 252, 3, 1) 0%, rgba(86, 205, 252, .8) 39%, rgba(86, 205, 252, .8) 68%, rgba(248, 252, 3, 1) 100%);
     display: flex;
-    min-height: 100vh;
+    min-width: 100%;
     overflow-y: hidden;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     position: relative;
+}
+
+.HawaiiChairs {
+    min-width: 100%;
+    max-height: 100vh;
+    scale: inherit;
+    object-fit: cover;
+    object-position: center;
+    z-index: -10;
+}
+
+.WaveLine {
+    z-index: 30;
+    position: relative;
+}
+
+.Home .Code {
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+    left: 2%;
+}
+.Home .Airplane {
+    height: 40%;
+    position: absolute;
+    bottom: 0px;
+    left: 2%;
 }
 
 .Home .Container {
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 2%;
     color: white;
     z-index: 2;
 }
 
 .Home .Container .TitleHeader {
+    padding-top: 10px;
     font-size: calc(1.7rem + 3vw);
 }
 
