@@ -2,42 +2,69 @@
     background: linear-gradient(45deg, rgba(248, 252, 3, 1) 0%, rgba(86, 205, 252, .8) 39%, rgba(86, 205, 252, .8) 68%, rgba(248, 252, 3, 1) 100%);
     display: flex;
     min-width: 100%;
+    min-height: 100vh;
     overflow-y: hidden;
     /* padding-top: 80px; */
     position: relative;
 }
 
 .HawaiiChairs {
+    position: relative;
     min-width: 100%;
     max-height: 100vh;
     scale: inherit;
     object-fit: cover;
     object-position: center;
-    z-index: -10;
+    z-index: -1000;
 }
 
 .WaveLine {
-    z-index: 30;
-    position: relative;
+    position: absolute;
+    min-width: 1440px;
+    z-index: 1;
 }
 
-.Home .Code {
-    height: 20%;
-    position: absolute;
-    bottom: 0px;
-    left: 2%;
+.MissionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.MissionContainer h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 50px;
+}
+
+h2 {
+    color: white;
+    background-image: linear-gradient(to right, darkblue , royalblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 9999;
 }
 .Home .Airplane {
     height: 40%;
     position: absolute;
     bottom: 0px;
     left: 2%;
+    z-index: -5;
+}
+.Home .Cloud {
+    position: relative;
+    z-index: -1;
 }
 
 .Home .Container {
     position: absolute;
-    top: 5%;
-    left: 2%;
+    top: 10%;
+    /* left: 2%; */
     color: white;
     z-index: 2;
 }

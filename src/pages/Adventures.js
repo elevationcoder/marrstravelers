@@ -15,7 +15,7 @@ const Adventures = () => {
   return (
     <div className={design.Adventures}>
       <PageHeader title={"Adventures"} />
-      <div><p>Test Text</p></div>
+      {/* <div><p>Test Text</p></div> */}
       <div className={design.AdventuresContainer}>
         <AdventureCardContainer>
             {adventuresData.map((data, index) => (

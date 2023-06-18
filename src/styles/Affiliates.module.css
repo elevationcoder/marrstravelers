@@ -1,0 +1,68 @@
+.Affiliates {
+    background: linear-gradient(45deg, rgba(248, 252, 3, 1) 0%, rgba(86, 205, 252, .8) 39%, rgba(86, 205, 252, .8) 68%, rgba(248, 252, 3, 1) 100%);
+    /* display: flex; */
+    min-width: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
+    /* padding-top: 80px; */
+    position: relative;
+}
+
+.Affiliates .Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Affiliates .Container .LinkContainer {
+    color: white;
+    width: 47%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.LinkContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: minmax(200px, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.LinkContainer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.LinkContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+    align-items: center;
+    justify-content: center;
+}
+
+.Affiliates .Container .LinkContainer h2 {
+    font-weight: 900;
+}
+
+@media (max-width: 500px){
+
+    .Affiliates .Container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .Affiliates .Container .LinkContainer {
+        color: white;
+        width: 80%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}

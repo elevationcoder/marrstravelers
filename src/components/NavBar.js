@@ -34,6 +34,12 @@ function NavBar(){
               <motion.li
                 whileHover={{scale: 1.2}}
               >
+                <Link to="/affiliates">Affiliates</Link>
+              </motion.li>
+
+              <motion.li
+                whileHover={{scale: 1.2}}
+              >
                 <Link to="/contact">Contact</Link>
               </motion.li>              
             </ul>
