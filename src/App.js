@@ -7,6 +7,7 @@ import Adventures from './pages/Adventures';
 import Tips from './pages/Tips';
 import NavBar from './components/NavBar';
 import FullPost from './pages/FullPost';
+import Affiliates from './pages/Affiliates';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/adventures" element={<Adventures />} />
         <Route path="/tips" element={<Tips />} />
+        <Route path="/affiliates" element={<Affiliates />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/adventures/:postId" element={<FullPost />} />
       </Routes>
